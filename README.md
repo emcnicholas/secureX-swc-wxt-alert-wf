@@ -1,6 +1,6 @@
 # secureX-swc-wxt-alert-wf
 
-In this workflow we will reach out to SWC for all alerts. If there are any alerts, we will parse the Alert URL and add it to a Webex Teams message.
+In this workflow we will reach out to Stealthwatch Cloud (SWC) for all alerts. If there are any alerts, we will parse the Alert URL and add it to a Webex Teams message.
 
 **Prerequisites:**
 1. Cisco Stealthwatch Cloud (SWC) Account (and API key)
@@ -21,7 +21,7 @@ Please follow the below steps exactly to get started!
 
 ![](screenshots/import-workflow.png)
 
-3. Click on **Browse** and copy paste the content of the [secureX-swc-detailed-alert-wf.json](https://raw.githubusercontent.com/emcnicholas/secureX-swc-detailed-alert-wf/main/SecureX%20Cloud%20Analytics%20Demo%20Workflow%20Shared.json) file inside of the text window. 
+3. Click on **Browse** and copy paste the content of the [Stealthwatch Cloud - Webex Teams Alerts.json](https://github.com/emcnicholas/secureX-swc-wxt-alert-wf/blob/main/Stealthwatch%20Cloud%20-%20Webex%20Teams%20Alerts%20Shared.json) file inside of the text window. 
 
 ![](screenshots/copy-paste.png)
 
@@ -35,7 +35,7 @@ Please follow the below steps exactly to get started!
 
 ![](screenshots/update_base_url_swc.png)
 
- 7. Next up we will go back into the imported workflow, and we will update the **swc_api_key**. In the **SecureX Cloud Analytics Demo** workflow global workflow properties, scroll down to **Variables**, select the **swc_api_key** variable, and enter your API key in the Value field and save. Please retrieve your SWC API key by loging in to your SWC portal and generate an API key for your use account. To generate an API key, login to your portal and select **Settings > Account Management > API Credentials**, from there, you can generate a unique API key. A key is tied to a specfic user account.
+ 7. Next up we will go back into the imported workflow, and we will update the **swc_api_key**. In the **Stealthwatch Cloud - Webex Teams Alerts** workflow global workflow properties, scroll down to **Variables**, select the **swc_api_key** variable, and enter your API key in the Value field and save. Please retrieve your SWC API key by loging in to your SWC portal and generate an API key for your use account. To generate an API key, login to your portal and select **Settings > Account Management > API Credentials**, from there, you can generate a unique API key. A key is tied to a specfic user account.
 
 > **Note:** make sure not to select an activity when looking for the global workflow properties.
 
